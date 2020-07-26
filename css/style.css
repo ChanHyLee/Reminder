@@ -1,0 +1,173 @@
+/*Default
+*/
+body {
+    background-color: #2c3e50;
+}
+
+/*Clock
+*/
+.js-clock {
+    position: relative;
+    width: 600px;
+    left: 50%;
+}
+
+h1 {
+    color: whitesmoke;
+    font-size: 180px;
+    text-shadow: black 1px 0 10px;
+    margin: 120px 0 0 -365px;
+}
+
+/*Get name
+*/
+.getName {
+    position: relative;
+    width: 409px;
+    height: 50px;
+    margin: 10px 0 10px 0;
+    left: 50%;
+    margin-left: -200px;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+.getName input {
+    margin-top: 9px;
+    margin-left: 20px;
+}
+
+/*Greetings
+*/
+.hello {
+    position: relative;
+    width: 400px;
+    left: 50%;
+    margin-left: -200px;
+    text-align: center;
+}
+
+.hello .greetings {
+    color: whitesmoke;
+    font-size: 30px;
+    text-shadow: black 1px 0 5px;
+    margin: 0 0 0 10px;
+}
+
+/*Change name
+*/
+.changeName {
+    position: relative;
+    width: 75.4px;
+    left: 50%;
+    margin: 0 0 9px -37.7px;
+}
+
+.changeName button {
+    font-size: 12px;
+    text-decoration: underline;    
+    text-shadow: black 1px 0 10px;
+    color: whitesmoke;
+    padding: 0;
+}
+
+/*To do list wrap
+*/
+button {
+    background: transparent;
+    border: 0;
+}
+
+ul {
+    margin: 15px 0 15px 0;
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+.toDoListWrap {
+    position: relative;
+    width: 400px;
+    left: 50%;
+    margin-left: -200px;
+    padding: 10px 0 10px 10px;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+.toDoListWrap .nothing,
+.toDoListWrap .toDoList {
+    color: whitesmoke;
+    text-shadow: black 1px 0 10px;
+}
+
+.toDoListWrap .toDoForm {
+    margin: 10px 0 0 10px;
+}
+
+li {
+    margin: 0 0 10px 10px;
+}
+
+input {
+    width: 355px;
+    background: transparent;
+    border-color: whitesmoke;
+    padding: 2px 3px 2px 7px;
+    font-size: 22px;
+    color: whitesmoke;
+}
+
+::placeholder {
+    color: whitesmoke;
+}
+
+.toDoListWrap .nothing {
+    text-align: center;
+    font-size: 20px;
+}
+
+.toDoListWrap .toDoList {
+    font-size: 20px;
+}
+
+/*Weather
+*/
+.weather {
+    position: absolute;
+    right: 1%;
+    top: 1%;
+    text-align: right;
+}
+
+.weather .js-weather,
+.weather .js-place {
+    color: white;
+    text-shadow: black 1px 0 5px;
+}
+
+/*JS setting
+*/
+.form,
+.greetings,
+.getName,
+.nothingToDos,
+.changeName {
+    display: none;
+}
+
+.showing {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to { opacity: 1;}
+}
+
+.bgImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: fadeIn 0.5s linear;
+}

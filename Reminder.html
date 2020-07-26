@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Reminder</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--Clock-->
+    <div class="js-clock">
+        <h1>00:00:00</h1>
+    </div>
+
+    <!--Get name-->
+    <div class="js-getName getName">
+        <form class="js-form form">
+            <input type="text" placeholder="What is your name?" />
+        </form>
+    </div>
+
+    <!--Greetings-->
+    <div class="hello">
+        <h4 class="js-greetings greetings"></h4>
+    </div>
+
+    <!--Change name-->
+    <div class="js-changeName changeName">
+        <button type="button" class="changeBtn">Change name</button>
+    </div>
+
+    <!--To do list wrap-->
+    <div class="toDoListWrap">
+
+        <!--Get to do-->
+        <div class="toDoForm">
+            <form class="js-toDoForm">
+                <input type="text" placeholder="Write a to do." />
+            </form>
+        </div>
+
+        <!--To do list-->
+        <div class="toDoList">
+            <ul class="js-toDoList"></ul>
+        </div>
+
+        <!--Nothing in list-->
+        <div class="nothing">
+            <p class="js-nothingToDos nothingToDos">There is nothing to do.</p>
+        </div>
+        
+    </div>
+
+    <!--Weather-->
+    <div class="weather">
+        <span class="js-weather"></span><br>
+        <span class="js-place"></span>
+    </div>
+
+    <script src="js/clock.js"></script>
+    <script src="js/greeting.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/bg.js"></script>
+    <script src="js/weather.js"></script>
+</body>
+</html>
