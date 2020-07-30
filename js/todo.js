@@ -72,7 +72,8 @@ function loadToDos() {
         parsedToDos.forEach(
             function(toDo) {
                 paintToDo(toDo.text);
-        });
+            }
+        );
     } else {
         nothingToDos.classList.add(SHOWING_CN);
     }
